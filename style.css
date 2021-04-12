@@ -11,12 +11,20 @@
   src: url("/fonts/FrankRuhlLibre-Regular.ttf");
 }
 @font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Light.ttf");
+}
+@font-face {
   font-family: "Ruhl Medium";
   src: url("/fonts/FrankRuhlLibre-Medium.ttf");
 }
 @font-face {
   font-family: "Vibes";
   src: url("/fonts/GreatVibes-Regular.ttf");
+}
+@font-face {
+  font-family: "Dancing";
+  src: url("/fonts/DancingScript-VariableFont_wght.ttf");
 }
 
 html {
@@ -68,11 +76,11 @@ a {
   align-items: center;
 }
 body {
-  font-family: "Ruhl", sans-serif;
+  font-family: "Roboto", sans-serif;
   animation: opening 1s ease-in-out forwards;
 }
 h1 {
-  font-family: "Vibes", sans-serif;
+  font-family: "Dancing", sans-serif;
 }
 
 /* Nav Section */
@@ -121,13 +129,14 @@ nav {
 .hero-introduction button {
   padding: 2rem 8rem;
   border: 3px solid black;
+  background-color: white;
   margin-bottom: 4rem;
   transition: background 0.5s ease-in-out;
 }
 
 .hero-introduction button:hover {
-  background-color: grey;
-  color: white;
+  cursor: pointer;
+  background-color: #414141;
   border-color: black;
 }
 
@@ -158,7 +167,7 @@ nav {
   left: 40%;
 }
 
-/*ANIMATIONS */
+/*ANIMATIONS 
 
 @keyframes opening {
   from {
@@ -185,6 +194,7 @@ nav {
     transform: rotateZ(0deg);
   }
 }
+*/
 
 .burger,
 .menu-check {
@@ -194,13 +204,13 @@ nav {
 /* ABOUT SECTION */
 
 .about {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-wrap: wrap;
 }
 .about-text {
   color: white;
-  background: var(--background-color);
+  background: var(--special-color);
   flex: 2 1 40rem;
   justify-content: space-around;
 }
@@ -212,9 +222,10 @@ nav {
   font-family: "Ruhl Medium";
 }
 .about-text h2 {
-  font-family: "Vibes";
+  font-family: "Dancing";
   padding: 4rem;
 }
+
 .about-image {
   flex: 1 1 40rem;
   position: relative;
@@ -314,6 +325,7 @@ nav {
   width: 100%;
 }
 .contact img {
+  max-width: 80rem;
   flex: 1 1 40rem;
 }
 
@@ -401,7 +413,16 @@ input:focus {
   /*About section */
   .about-text div {
     padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
+  .about-text h2 {
+    padding: 1rem;
+  }
+
   /* GALLERY*/
 
   .gallery {

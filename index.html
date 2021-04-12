@@ -10,7 +10,13 @@
     />
     <meta name="robots" content="index,follow" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Elena Joy | Photographer</title>
+    <link rel="preconnect" href="https://app.snipcart.com" />
+    <link rel="preconnect" href="https://cdn.snipcart.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.css"
+    />
+    <title>Habits & Planners | Changer your life</title>
   </head>
   <body>
     <header class="main-head">
@@ -47,8 +53,10 @@
             src="./img/Daily-Blueprint-Cover.png"
             alt="picture of elena joy"
           />
+          <!--
           <img src="./img/plant1.png" alt="" class="plant1 plant" />
           <img src="./img/plant2.png" alt="" class="plant2 plant" />
+          -->
         </div>
       </section>
       <section class="about" id="about">
@@ -81,10 +89,6 @@
               The Habits Planner is designed to be free of distractions. When
               you interact with the planner,
             </p>
-          </div>
-          <div class="about-contact">
-            <h3></h3>
-            <p></p>
           </div>
         </div>
       </section>
@@ -131,16 +135,29 @@
             <span> life.</span>
           </h2>
           <form>
+            <!--
             <label for="email">Your Email:</label>
             <input type="email" id="email" required />
-            <button type="submit">Submit</button>
+            -->
+            <button
+              class="buy-button snipcart-add-item"
+              data-item-id="1"
+              data-item-price="9.99"
+              data-item-url="/shop/products/journal"
+              data-item-name="Daily Blueprint"
+              data-item-image="/img/Cover.png"
+              data-item-description="Digital daily journal for you to plan your day with focused intentions."
+              data-item-file-guid="46e5270e-45dd-446d-91b0-a2840c756066"
+            >
+              Buy Now
+            </button>
           </form>
         </div>
-        <img src="./img/contact-image.jpg" alt="elena-joy" />
+        <img src="./img/07.png" alt="ideas-bulbs" />
       </section>
     </main>
     <footer>
-      <h4>Elena Joy &copy; 2019</h4>
+      <h4>Habits & Planners &copy; 2021</h4>
       <ul>
         <li>
           <a href="#"
@@ -159,5 +176,16 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="/app.js"></script>
+    <script
+      async
+      src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"
+    ></script>
+    <div
+      id="snipcart"
+      data-config-modal-style="side"
+      data-api-key="NWZiZWQxM2MtOGU3OS00ZGFmLTk2MzYtYzEyYTkwYzE1MDY3NjM3NDY5MTg3MzYwMjMzNDMz"
+      hidden
+    ></div>
   </body>
 </html>
